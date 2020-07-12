@@ -1,0 +1,17 @@
+Joi npm for schema and validation of JSON
+express for server
+mongoose as DB
+
+
+have a separate route file for routes only
+
+config npm package to store and retrieve the JSON settings ... for using same db for multiple / also useful for env varianbles  
+
+debug npm for debugging and using process.env to start and stop debugging messages
+
+templating engines for generating dynamic HTML 
+pug EJS mustache
+
+send JST token as header for all defined routes to make sure user is authenticated...
+
+mongo "mongodb+srv://ad-api-crfdi.mongodb.net/<ad-api>" --username akkiei
