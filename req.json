@@ -1,0 +1,48 @@
+{
+	"Registration": {
+		"input": {
+			"userName": "shd be unique so Need to check from backend DONE",
+			"name": "normal name DONE",
+			"password": "anything DONE"
+		}, 
+		"return": {
+			"account number": "unique 8 digit no NOT DONE",
+			"userName": "return same name",
+			"name": "retunr same name as well"
+		}
+	},
+
+	"Login": {
+		"userName": "req",
+		"password": "req",
+		"JWT token": "req",
+
+		"return ": {
+			"successfull login and acc exists": {
+				"1": "print acc details",
+				"2": "EMI calculation"
+			},
+			"successful login but acc doesn't exists": {
+				"1": "msg : UPLOAD CSV and option to upload",
+				"2": " expect a CSV with [ date, withdraw, deposit, balance ]",
+				"3": "Store the csv as account details in db , first 100 records"
+			}
+		}
+	},
+
+	"Acc transfer through UPI": {
+		"req": "User's username and amount",
+		"wrokflow": {
+            "1" : "Find user with username",
+            "2" : "check if you have that much amount in ur balance",
+            "3" : "Can add a check of minimum balance of 1000",
+            "4" : "substract in your db and add in recepient's db"
+        }
+	},
+
+	"UploadCSV_req": {
+		"monthly balance MB": "Total deposits - withdraws/credits, for each month",
+		"avg monthly balance AMB": "SUM( all months monthly balance) / 12 ",
+		"credit limit": "AMB x 1.2"
+	}
+}

@@ -1,0 +1,22 @@
+
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+    "name" : "fifth person",
+    "username": "fifth",
+    "password" : "test"
+}
+
+
+###
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "username": "fourth",
+    "password" : "test"
+}
+
+###
+GET http://localhost:8000/api/login/bankCsv/fourth
